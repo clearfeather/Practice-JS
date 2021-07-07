@@ -179,15 +179,62 @@
 
 // console.log(`Average score was ${Math.round(total / scores.length)}`);
 
-const students = {
-    john: 90,
-    billy: 57,
-    jaon: 49,
-    mike: 99
-}
+// const students = {
+//     john: 90,
+//     billy: 57,
+//     jaon: 49,
+//     mike: 99
+// }
 
-scores = Object.values(students);
+// scores = Object.values(students);
 
-for (let i of scores) {
-    console.log();
+// for (let i of scores) {
+//     console.log();
+// }
+
+//FUNCTIONS
+
+// function greet(firstName, lastName) {
+//     console.log(`Hi ${firstName} ${lastName[0]}., how are you?`)
+// };
+
+// greet('Tim', 'Jones');
+
+// function rant(message) {
+//     for (i = 0; i < 3; i++) {
+//     console.log(message.toUpperCase());
+//     }
+// }
+
+// rant('I hate beets');
+
+//Repeat function
+
+// function repeat(str, numTimes) {
+//     let result = '';
+//     for (i = 0; i < numTimes; i++) {
+//         result += str;
+//     }
+//     console.log(result);
+// }
+
+// repeat('I am cool', 10);
+
+//RETURN = Export value out of the function (output), can save to a variable and used for further tasks
+
+// function add(x,y) {
+//     let sum = x + y;
+//     return sum;
+// }
+
+// console.log(add(7,9));
+
+// function lastElement (array) {
+//     if (array.length === 0) {
+//         return null;
+//     } return array[array.length -1];
+// } 
+
+function capitalize (string) {
+    return string[0].toUpperCase() + string.slice(1);
 }
