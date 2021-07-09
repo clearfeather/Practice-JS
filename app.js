@@ -235,6 +235,122 @@
 //     } return array[array.length -1];
 // } 
 
-function capitalize (string) {
-    return string[0].toUpperCase() + string.slice(1);
+// function capitalize (string) {
+//     return string[0].toUpperCase() + string.slice(1);
+// }
+
+// function bankRobbery() {
+//     const heroes = ['Spiderman', 'Wolverine', 'Black Panther', 'Spiderman'];
+//     function cryForHelp() {
+//         function inner() {
+//             for (let hero of heroes) {
+//                 console.log(`Please help us ${hero}!`)
+//             }
+//         }
+//         inner();
+//     }
+//     cryForHelp();
+// }
+
+// console.log(bankRobbery());
+
+// function logit(i) {
+//     for (let i = 0; i < 10; i++) {
+//         i();
+//     }
+    
+// }
+
+// function ten() {
+//     console.log('something here');
+// }
+
+// ten(logit);
+
+// const myMath = {
+//     PI: 3.14159,
+//     square: function (num) {
+//         return num ** 2;
+//     },
+//     cube: function (num) {
+//         return num ** 3;
+//     }
+// }
+
+// for (i = 1; i <= 10; i++) {
+//     if (i % 2 !== 0) console.log('Odd Number', i);
+// };
+
+// let i = 0;
+// while (i <= 5) {
+//     if (i % 2 !== 0) console.log(i);
+//     i++;
+// }
+
+// let i = 9;
+// do {
+//     if (i % 2 !== 0) console.log(i);
+//     i++;
+// } while (i <= 5);
+
+
+//For in loop
+// const person = {
+//     name: 'John',
+//     age: 25,
+//     interests: 'hiking',
+//     height: "5'10"
+// };
+
+// for (let key in person) {
+//     console.log(`${key}: ${person[key]}`);
+// }
+
+// const animal = {
+//     type: 'Jaguar',
+//     color: 'brown',
+//     level: 'aggressive'
+// };
+
+// for (let key in animal) {
+//     console.log(key, animal[key]);
+// }
+
+// for (let key in person) {
+//     document.write(key)
+// }
+
+// const colors = ['red', 'green', 'blue'];
+
+// for (let index in colors) {
+//     console.log(index, colors[index]);
+// }
+
+// for (let color of colors) {
+//     console.log(color);
+// }
+
+// let i = 1;
+// while (i <= 1000) {
+//     // if (i === 6) break;
+//     if (i % 2 === 0) {
+//         i++;
+//         continue;
+//     }
+
+//     console.log(i);
+//     i++;
+// }
+
+// function maxOf (num1, num2) {
+//     if (num1 > num2) return num1;
+//     return num2;
+
+// function maxOf (num1, num2) {
+//     return (num1 > num2) ? num1 : num2;
+// }
+
+function isLandscape(width,height) {
+    if (width > height) return true;
+    return false;
 }
