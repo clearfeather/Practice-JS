@@ -354,38 +354,3 @@
 //     return (width > height);
 // }
 
-//FizzBuzz
-
-//divisible by 3 > fizz
-//else by 5 > buzz
-//both > fizbuzz
-//none > input
-//NaN > not a number
-
-// const output = fizzBuzz(false);
-// console.log(output);
-
-// function fizzBuzz(input) {
-//     if (typeof input !== 'number') {
-//         return NaN;
-//     } else if (input % 3 === 0 && input % 5 === 0) {
-//         return 'fizbuzz';
-//     } else if (input % 3 === 0) {
-//         return 'fizz';
-//     } else if (input % 5 === 0) {
-//         return 'buzz';
-//     } else return input;
-// }
-
-//Speed Check Function
-// speed limit = 70
-// every 5 over > 1 point
-// use Math.Floor(1.3)
-// 12 points > suspended
-
-checkSpeed(50, 70);
-
-function checkSpeed(actualSpeed, limit) {
-    const speed = Math.floor(actualSpeed);
-    if (speed > limit)
-}
