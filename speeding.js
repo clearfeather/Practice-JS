@@ -5,7 +5,7 @@
 // use Math.Floor(1.3)
 // 12 points > suspended
 
-checkSpeed(70, 70);
+checkSpeed(150, 70);
     
 function checkSpeed(actualSpeed, limit) {
     //Get the speed rotated down
@@ -19,8 +19,8 @@ function checkSpeed(actualSpeed, limit) {
     if (speed > limit) {
          console.log(`You're speeding by ${overLimit}mph!`);
          console.log(`${points} points have been added to your driver's license.`)
-         if (points === 12) {
-             console.log(`You have ${points}, your license has been suspended.`)
+         if (points >= 12) {
+             console.log(`You have ${points} points, your license has been suspended.`)
          }
 
     } else { 
