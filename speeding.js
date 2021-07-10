@@ -5,7 +5,8 @@
 // use Math.Floor(1.3)
 // 12 points > suspended
 
-checkSpeed(150, 70);
+//Current speed, Speed Limit
+checkSpeed(80, 70);
     
 function checkSpeed(actualSpeed, limit) {
     //Get the speed rotated down
