@@ -307,13 +307,54 @@
 //     return (width > height);
 // }
 
-showNumbers(10);
+// showNumbers(10);
 
-function showNumbers(limit) {
-    for (i = 0; i <= limit; i++) {
-        // if (i % 2 === 0) console.log(i, 'Even Number');
-        // else console.log(i, 'Odd Number');
-        const message = (i % 2 === 0) ? 'Even Number' : 'Odd Number';
-        console.log(i, message);
-    } 
-}
+// function showNumbers(limit) {
+//     for (i = 0; i <= limit; i++) {
+//         // if (i % 2 === 0) console.log(i, 'Even Number');
+//         // else console.log(i, 'Odd Number');
+//         const message = (i % 2 === 0) ? 'Even Number' : 'Odd Number';
+//         console.log(i, message);
+//     } 
+// }
+
+// const array = ['hello', null, undefined, 0, 1, 2, 3, 'string'];
+
+// function countTruthy(array) {
+//     let count = 0;
+//     for (let item of array) 
+//         if (item)
+//         count++;
+//     return count;
+// }
+
+// console.log(countTruthy(array));
+
+// const movie = {
+//     title: 'a',
+//     releaseYear: 2018,
+//     rating: 4.5,
+//     director: 'b'
+// };
+
+// showProperties(movie);
+
+// //Show string only typeof properties
+// function showProperties(obj) {
+//     for (let key in obj) {
+//         if (typeof obj[key] === 'string') {
+//             console.log(key, obj[key]);
+//         }
+//     }
+// }
+
+// console.log(sum(10));
+
+// //sum of all multiples of 3 and 5 up to the limit
+// function sum(limit) {
+//     let total = 0;
+//     for (i = 0; i <= limit; i++) 
+//         if (limit % 3 === 0 || limit % 5 === 0) 
+//             total += i;
+//     return total;
+// }
