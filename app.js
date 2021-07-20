@@ -358,3 +358,45 @@
 //             total += i;
 //     return total;
 // }
+
+// showStars(10);
+
+// function showStars(rows) {
+//     for (let row = 1; row <= rows; row++) {
+//         let pattern = '';
+//         for (let i = 0; i < row; i++)
+//             pattern += '*';
+//         console.log(pattern);
+//     }
+// }
+
+// emojis(10);
+
+// function emojis(qty) {
+//     for (let i = 1; i <= qty; i++) {
+//         let pattern = '';
+//         for (let j = 0; j < i; j++) {
+//             pattern += '👍';
+//         }
+//         console.log(pattern);
+//     }
+// }
+
+// const cat = {
+//     name: 'Grover',
+//     color: 'grey',
+//     breed: 'long hair',
+//     meow(){
+//         console.log(`meow function is ${this.breed}`)
+//     }
+// }
+
+// console.log(cat.meow());
+
+// TRY / CATCH
+
+try {
+    hello.toUpperCase(); //this is incorrect code
+} catch {
+    console.log("Error");
+}
