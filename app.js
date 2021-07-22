@@ -395,8 +395,56 @@
 
 // TRY / CATCH
 
-try {
-    hello.toUpperCase(); //this is incorrect code
-} catch {
-    console.log("Error");
-}
+// try {
+//     hello.toUpperCase(); //this is incorrect code
+// } catch {
+//     console.log("Error");
+// }
+
+// // For Each (old version of For Of)
+
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// // function print(element) {
+// //     console.log(element);
+// // }
+
+// numbers.forEach(function(el){
+//     if (el % 2 === 0) {
+//     console.log('for each', el)
+//     }
+// });
+
+// for (let el of numbers) {
+//     if (el % 2 === 0) {
+//     console.log('for of', el)
+//     }
+// }
+
+// // map - constructs new array from existing array
+
+// const doubles = numbers.map(function(num) {
+//     return num * 2;
+// })
+// console.log(doubles);
+
+// my map practice
+
+// const movies = [
+//     {
+//         title: 'The last of us',
+//         score: 100
+//     },
+//     {
+//         title: 'The road',
+//         score: 90
+//     }
+// ]
+
+// const titles = movies.map(function(movie) {
+//     return movie.title;
+// })
+
+// for (title of titles) {
+//     console.log(title);
+// }
