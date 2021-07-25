@@ -1,1 +1,1 @@
-# Practicing Javascript Skills with Colt
+# Practicing Javascript Skills
