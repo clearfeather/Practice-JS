@@ -1,3 +1,5 @@
+// // Random Number ***************************************
+
 // let random = Math.random();
 // if (random > 0.5) {
 //     console.log("WINNER!!!!");
@@ -6,6 +8,8 @@
 //     console.log("SORRY TRY AGAIN");
 // }
 // console.log(`Your number was ${random}`);
+
+// // Age ***************************************
 
 // let age = prompt('Please enter your age');
 
@@ -22,6 +26,8 @@
 // }
 // console.log(`You are ${age} years old`);
 
+// // Password Length ***************************************
+
 // const password = prompt('Please enter a new password');
 
 // if (password.length >= 6 && password.indexOf(' ') === -1) { //Checking password length & spacing
@@ -30,11 +36,15 @@
 //     console.log('check the requirements');
 // }
 
+// // Name Prompt ***************************************
+
 // const firstName = prompt("enter yo first name");
 
 // if (!firstName) {
 //     console.log("no name entered")
 // }
+
+// // Switch ***************************************
 
 // let day = 5;
 // switch (day) {
@@ -45,6 +55,8 @@
 //     default: console.log("Not sure what's going on");
 // }
 
+// // For loops ***************************************
+
 // for (let i=25; i>=0; i-=5) {
 //     console.log(i);
 // }
@@ -53,14 +65,13 @@
 //     "Lion", "Tiger", "Bear"
 // ]
 
-
 // for (let i = animals.length -1; i >= 0; i--) {
 //     console.log(animals[i]);
 // }
 
-// const people = ["Scooby", "Velma", "Daphne", "Shaggy", "Fred"]; //DONT TOUCH THIS LINE!
+// // For loop excercise***************************************
 
-// // WRITE YOUR LOOP BELOW THIS LINE:
+// const people = ["Scooby", "Velma", "Daphne", "Shaggy", "Fred"];
 
 // for (let i = 0; i <= people.length -1; i ++) {
 //     console.log(people[i].toUpperCase());
@@ -428,7 +439,7 @@
 // })
 // console.log(doubles);
 
-// my map practice
+// my map practice / arrow function
 
 // const movies = [
 //     {
@@ -445,6 +456,173 @@
 //     return movie.title;
 // })
 
+// const titles = movies.map(movie => movie.title);
+
 // for (title of titles) {
 //     console.log(title);
 // }
+
+// Arrow Functions
+
+// const add = function (x,y) {
+//     return x + y;
+// }
+
+// const add = (x,y) => {
+//     return x + y;
+// }
+
+// function add (x,y) {
+//     return x + y;
+// }
+
+// let add = (x, y) => x + y;
+
+// // rollDie = () => {
+// //     return Math.floor(Math.random() * 6) + 1
+// // }
+
+// rollDie = () => (
+//     Math.floor(Math.random() * 6) + 1
+// )
+
+// const rollDie1 = function() {
+//     return Math.floor(Math.random() * 6) + 1
+// }
+
+// //Shrinking from normal function to arrow function
+
+// const isEven = function (num) {
+//     return num %2 === 0;
+// }
+
+// const isEven = (num) => {
+//     return num %2 === 0;
+// }
+
+// const isEven = num => {
+//     return num %2 === 0;
+// }
+
+// const isEven = num => (
+//     num % 2 === 0
+// );
+
+// const isEven = num => num % 2 === 0;
+
+// setTimeout(() => {
+//     console.log("Hello");
+// }, 3000);
+
+// // More Arrow Function practice
+
+// function sum(a,b) {
+//     return a + b;
+// }
+
+// let sum2 = (a,b) => a + b;
+
+// function isPositive(number) {
+//     return number >= 0;
+// }
+
+// let isPositive2 = number => number >= 0;
+
+// function randomNumber() {
+//     return Math.random;
+// }
+
+// let randomNumber2 = () => Math.random;
+
+// document.addEventListener('click', function() {
+//     console.log('click');
+// })
+
+// document.addEventListener('click', () => console.log('click');)
+
+// Map & Filter ***************************************
+
+let movies = [
+    {
+        title: 'The Last of Us',
+        score: 99,
+        release: 2015
+    }, 
+    {
+        title: 'Waterworld',
+        score: 60,
+        release: 1999
+    }
+]
+
+// console.log(movies[0].title);
+
+// console.log(movies[0].title);
+
+// for (let key in movies) {
+//     console.log(key);
+// }
+
+// const topMovies = movies.filter(movie => {
+//     return movie.score > 80;
+// })
+
+// const topMovies = movies.filter(movie => movie.score > 80);
+
+// console.log(topMovies);
+
+// // Filter Excercise
+
+// function validUserNames(usernames){
+//     return usernames.filter(function(username){
+//          return username.length < 10;
+//      });
+//  }
+
+//  // converted to shortened arrow functions
+
+//  let validUserNames = (usernames) => usernames.filter((username) => username.length < 10);
+
+// // Some & Every
+
+// function newMovies(movies) {
+//     return movies.some(function(movie){
+//         return movie.release > 2000;
+//     });
+// };
+// console.log(newMovies(movies));
+
+// // converted to arrow function
+
+// console.log(
+//     movies.some(movie => movie.release > 2000)
+//     );
+
+// Reduce Method
+
+const prices = [4.49, 9.99, 21.99, 5.50, 17.99];
+
+//Standard (total)
+let total = 0;
+for (let price of prices) {
+    total += price;
+}
+
+//Reduce (total)
+const total2 = prices.reduce((total, price) => {
+    return total + price;
+});
+
+const lowCost = prices.reduce((min, price) => {
+    if(price < min) {
+        return price;
+    }
+    return min;
+})
+
+const topMovie = movies.reduce((top,currMovie) => {
+    if(currMovie.score > top.score) {
+        return currMovie;
+    }
+    return top;
+})
