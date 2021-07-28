@@ -600,29 +600,48 @@ let movies = [
 
 // Reduce Method
 
-const prices = [4.49, 9.99, 21.99, 5.50, 17.99];
+// const prices = [4.49, 9.99, 21.99, 5.50, 17.99];
 
-//Standard (total)
-let total = 0;
-for (let price of prices) {
-    total += price;
-}
+// //Standard (total)
+// let total = 0;
+// for (let price of prices) {
+//     total += price;
+// }
 
-//Reduce (total)
-const total2 = prices.reduce((total, price) => {
-    return total + price;
-});
+// //Reduce (total)
+// const total2 = prices.reduce((total, price) => {
+//     return total + price;
+// });
 
-const lowCost = prices.reduce((min, price) => {
-    if(price < min) {
-        return price;
-    }
-    return min;
-})
+// const lowCost = prices.reduce((min, price) => {
+//     if(price < min) {
+//         return price;
+//     }
+//     return min;
+// })
 
-const topMovie = movies.reduce((top,currMovie) => {
-    if(currMovie.score > top.score) {
-        return currMovie;
-    }
-    return top;
-})
+// const topMovie = movies.reduce((top,currMovie) => {
+//     if(currMovie.score > top.score) {
+//         return currMovie;
+//     }
+//     return top;
+// })
+
+// // This & Arrow Function Scope
+
+// const person = {
+//     firstName: 'Blake',
+//     lastName: 'Johnson',
+//     fullName: function() {
+//         return `${this.firstName} ${this.lastName}`
+//     }
+// }
+
+// // Spread
+
+// console.log(...'splitting letters apart');
+
+// //Add properties onto new copied array
+// const newUser = {...person, id: 12345, isAdmin: false};
+
+// const {firstName: fName, lastName:lName} = person;
