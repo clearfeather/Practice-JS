@@ -645,3 +645,6 @@ let movies = [
 // const newUser = {...person, id: 12345, isAdmin: false};
 
 // const {firstName: fName, lastName:lName} = person;
+
+// convert F to C
+let toC = (f) => (5/9) * (f-32);
